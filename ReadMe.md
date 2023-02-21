@@ -428,6 +428,7 @@ Class methods are used to define instances as a factory method or access values 
 Class methods are defined by adding `self.` before the method name
 
     class  Animal
+        @@animals_list = ['cat', 'dog','cow', 'ox']
         attr_accessor :noise
         attr_accessor :color
 
@@ -437,7 +438,7 @@ Class methods are defined by adding `self.` before the method name
         end
 
         def self.animals
-            ['cat', 'dog','cow', 'ox']
+            animals_list
         end
 
         def self.create_cat
