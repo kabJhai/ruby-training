@@ -25,7 +25,7 @@ The purpose of unless statement is for simplicity
 
 Case statement is the same as select statements
 
-`Ruby
+` Ruby
 
     case test_value
     when value
