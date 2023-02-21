@@ -336,17 +336,15 @@ In Ruby the setter and getter methods have the same name as the instance variabl
 
 For example: To make a setter and getter methods for the instance variable noise we write the following code
 
-<code>
+    
+    #The code below defines an animal class with an instant variable node and methods to access it
+    class Animal
 
-#The code below defines an animal class with an instant variable node and methods to access it
-class Animal
+        def noise
+            @noise
+        end
 
-    def noise
-        @noise
+        def noise = (value)
+            @noise = value
+        end
     end
-
-    def noise = (value)
-        @noise = value
-    end
-end
-</code>
