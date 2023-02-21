@@ -290,3 +290,14 @@ We can customize the merge method and handle when a key conflict occurs and perf
     #We can also perform another operation every time a key conflict occurs
     #The code below multiplies the old value with the new value and store it when a key conflict occurs
     h1.merge(h2) {|key,old,new| old * new}
+
+# Variable Scope
+
+Variables are defined differently depending on the scope
+    <table>
+        <tr><td>Global Variable</td><td>$variable</td><tr>
+        <tr><td>Class Variable</td><td>@@variable</td><tr>
+        <tr><td>Instance Variable</td><td>@variable</td><tr>
+        <tr><td>Local Variable</td><td>variable</td><tr>
+        <tr><td>Block Variable</td><td>variable</td><tr>
+    </table>
