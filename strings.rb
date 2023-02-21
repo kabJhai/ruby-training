@@ -6,11 +6,10 @@
 
 #Appending a string to a string: is a little bit different.
 
-another = "Something"
+# another = "Something"
 
-another << "Something more"
-puts another
-
+# another << "Something more"
+# puts another
 #Escape characters is the same as python's built-in string functions.
 
 #String interpolation
