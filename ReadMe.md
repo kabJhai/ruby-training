@@ -563,12 +563,12 @@ In Ruby you can handle an exception by using the `rescue` keyword.
         divide(2,0)
         divide(4,"2")
         divide(1)
-    rescue ZeroDivisionError  
-        puts "ZeroDivisionError"
+    rescue ZeroDivisionError  => e
+        puts "#{e.class} Handled exception"
     rescue TypeError, ArgumentError
         puts "Your arguments are invalid"
-    rescue
-        puts "Unexpected exception"
+    rescue => e
+        puts "Unexpected #{e.message} "
     end
 
 
