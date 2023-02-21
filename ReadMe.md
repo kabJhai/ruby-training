@@ -388,3 +388,13 @@ attr_accessor :noise is the same as defining the attribute methods for reading a
     end
 
 We can customize the reader and writer methods by defining it directly rather than using attributes
+
+# MAC (Method Access Control)
+
+There are three access controll levels
+- public: anyone can access the method
+- protected: only called by the instance of the class and the subclass
+- private: only called by the instance of the class
+
+To define access methods we need to use the keywords `public`, `protected`, and `private` before defining the method
+
