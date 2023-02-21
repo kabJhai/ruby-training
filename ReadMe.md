@@ -195,7 +195,7 @@ Useful for iterating over a range or an arrar and find a value that satisfies th
     array.all?{ |value| value % 2 == 0 }   
 
 
-# Maps
+# Maps / Collect
 
 Perform an operation on elements of an array and map it to an array
 
@@ -220,3 +220,30 @@ Perform an operation on elements of an array and map it to an array
             value
         end
     end
+
+# Inject / Reduce Methods
+
+Inject method has an accumulator value that we call memo
+It stores the result of the previous operation and you can access it on the next iteration
+
+For example:
+
+    #The code below is used to find the maximum value of the array it uses the memo variable to handle the comparison
+    result = [12,556,23,68,21,67].inject do |memo, value|
+        if value > memo
+            value
+        else
+            memo
+        end
+    end
+
+    puts "The maximum value is #{result}"
+    
+
+    #The code below is used to sum the values of the array
+
+    sum = (1..10).inject do |memo, value|
+        memo + value
+    end
+    puts "The sum is #{sum}"
+
