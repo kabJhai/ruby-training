@@ -420,3 +420,33 @@ The `initialize` method is the constructor of the class
 # Importing Classes
 
 To import modules or classes from different locations use `require_relative path`
+
+
+# Class Methods
+
+Class methods are used to define instances as a factory method or access values with out an instance of the class 
+Class methods are defined by adding `self.` before the method name
+
+    class  Animal
+        attr_accessor :noise
+        attr_accessor :color
+
+        def initialize(noise, color)
+            @noise = noise
+            @color = color
+        end
+
+        def self.animals
+            ['cat', 'dog','cow', 'ox']
+        end
+
+        def self.create_cat
+            Animal.new("meow","gray")
+        end
+    end
+
+    puts Animal.animals
+
+    cat = Animal.create_cat
+    puts cat.noise
+    puts cat.color
