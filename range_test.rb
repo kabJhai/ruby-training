@@ -16,3 +16,7 @@ exclusive_example = 1...100
 
 # Mainly used with arrays and iterators.
 
+# We can also explode ranges to declare arrays
+
+the_array = [*inclusive_example]
+puts the_array
