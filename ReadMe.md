@@ -416,3 +416,7 @@ The `initialize` method is the constructor of the class
     cow = Animal.new("Moo","White")
     puts cow.noise
     puts cow.color
+
+# Importing Classes
+
+To import modules or classes from different locations use `require_relative path`
