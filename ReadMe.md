@@ -544,3 +544,11 @@ We use the keyword `include` to include the behavior of a module inside our clas
     class Teacher
         include InformationModule
     end
+
+## Require and Include
+
+- require: is used to load a file from the default location `$LOAD_PATH`. It keeps track of the loaded file and loads it only once. It returns boolean value indicating whether the file was loaded successfully.
+- require_relative: is used to load a file from the current directory.
+- include: is used to include modules into a class not file.
+
+
