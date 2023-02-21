@@ -338,15 +338,15 @@ For example: To make a setter and getter methods for the instance variable noise
 
 <code>
 
-    #The code below defines an animal class with an instant variable node and methods to access it
-    class Animal
+#The code below defines an animal class with an instant variable node and methods to access it
+class Animal
 
-        def noise
-            @noise
-        end
-
-        def noise = (value)
-            @noise = value
-        end
+    def noise
+        @noise
     end
+
+    def noise = (value)
+        @noise = value
+    end
+end
 </code>
