@@ -3,7 +3,7 @@
 Unless is the same as if not. If it is not this then do that
 
 The purpose of unless statement is for simplicity
-`
+ 
     cart = []
 
     if !cart.empty?
@@ -19,13 +19,13 @@ The purpose of unless statement is for simplicity
         puts cart[0]
     end
 
-`
+ 
 
 # Case statement
 
 Case statement is the same as select statements
 We can use boolean expressions to handle cases
-`
+ 
     test_value
     case
     when value
@@ -35,7 +35,7 @@ We can use boolean expressions to handle cases
     else
         final something
     end
-`
+ 
 
 #Loops
 
@@ -44,7 +44,7 @@ We can use loops to handle cases iteratively
 
 Basic Loop statement
 
-`
+ 
 
     i = 10
     loop do
@@ -53,11 +53,11 @@ Basic Loop statement
         i -= 1
     end
     puts "Count is #{i}"
-`
+ 
 
 ## While Loop
 
-`
+ 
 
     i = 10
     while i >= 1
@@ -65,7 +65,7 @@ Basic Loop statement
         i -= 1
     end
     puts "Count is #{i}"
-`
+ 
 
 ## Until Loop
 
@@ -73,14 +73,14 @@ Basic Loop statement
 Until loop iterates through a collection or a sequence of elements
 Does an operation until the condition is satisfied. In other words it works as while not or unless condition
 
-`
+ 
 
     values = [1,2,3]
     until values.empty?
         value = values.shift
         puts value
     end
-`
+ 
 
 # Iterators
 
@@ -97,7 +97,7 @@ Example:
 
 It directly tells the code to execute the block multiple times of the given value.
 
-` 
+  
 
     5.times{ puts "Do something" }
     
@@ -106,7 +106,7 @@ It directly tells the code to execute the block multiple times of the given valu
     5.times do |value|
         puts "Do something #{value}"
     end
-`
+ 
 
 
 
@@ -114,7 +114,7 @@ It directly tells the code to execute the block multiple times of the given valu
 
 Does work given the initial and the final value
 
-` 
+  
 
     1.upto(5){ puts "Do something" }
     
@@ -122,11 +122,11 @@ Does work given the initial and the final value
     1.upto(5) do |value|
         puts "Do something #{value}"
     end
-`
+ 
 
 ## Down to
 
-` 
+  
 
     5.downto(1){ puts "Do something" }
     
@@ -134,12 +134,12 @@ Does work given the initial and the final value
     5.downto(1) do |value|
         puts "Do something #{value}"
     end
-`
+ 
   
 ## For each
 
 
-` 
+  
 
     (1..5).each{ puts "Do something" }
     
@@ -147,7 +147,7 @@ Does work given the initial and the final value
     (1..5).each do |value|
         puts "Do something #{value}"
     end
-`
+ 
 
 ## For in
 
