@@ -97,7 +97,8 @@ Example:
 
 It directly tells the code to execute the block multiple times of the given value.
 
-`
+` 
+
     5.times{ puts "Do something" }
     
     #Or
@@ -113,7 +114,8 @@ It directly tells the code to execute the block multiple times of the given valu
 
 Does work given the initial and the final value
 
-`
+` 
+
     1.upto(5){ puts "Do something" }
     
     #Or
@@ -121,10 +123,11 @@ Does work given the initial and the final value
         puts "Do something #{value}"
     end
 `
-`
+
 ## Down to
 
-`
+` 
+
     5.downto(1){ puts "Do something" }
     
     #Or
@@ -132,11 +135,12 @@ Does work given the initial and the final value
         puts "Do something #{value}"
     end
 `
-`   
+  
 ## For each
 
 
-`
+` 
+
     (1..5).each{ puts "Do something" }
     
     #Or
