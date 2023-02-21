@@ -167,3 +167,29 @@ The same property as for loop in python
     - Both used for displaying a value on console
     - Puts: adds a newline at the end automatically
     - Print: prints the value as it is without newline
+
+# Find Methods
+
+Useful for iterating over a range or an arrar and find a value that satisfies the condition
+
+    #Check if the value exists
+    (1..10).find{ |n|  n== 8}    
+
+    #Find values that are even
+    (1..10).find{ |n|  n%2 == 0}
+
+    #To get all the values that satisfy the condition
+    (1..10).find_all{ |n|  n%2 == 0}
+
+    #Delete if the value satisfies the condition
+    array = [*(1..10)]
+    array.delete_if{ |value| value % 2 == 0 }
+
+    #Check if any element satisfies the condition
+    array.any?{ |value| value % 2 == 0 }
+
+     #Check if all of the elements satisfy the condition
+    array.all?{ |value| value % 2 == 0 } 
+
+     #Check if none of the elements satisfy the condition
+    array.all?{ |value| value % 2 == 0 }   
