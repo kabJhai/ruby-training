@@ -398,3 +398,21 @@ There are three access controll levels
 
 To define access methods we need to use the keywords `public`, `protected`, and `private` before defining the method
 
+
+# Constructor
+
+The `initialize` method is the constructor of the class
+
+    class  Animal
+        attr_accessor :noise
+        attr_accessor :color
+
+        def initialize(noise, color)
+            @noise = noise
+            @color = color
+        end
+    end
+
+    cow = Animal.new("Moo","White")
+    puts cow.noise
+    puts cow.color
