@@ -357,7 +357,7 @@ For example: To make a setter and getter methods for the instance variable noise
 
 We can have attribute reader, writer and accessor methods
 We use attr_reader, attr_writer and attr_accessor to declare attribute methods
-
+## attr_reader
     attr_reader :noise 
 
 is the same as
@@ -367,6 +367,7 @@ is the same as
     end
 
 
+## attr_writer
 
     attr_writer :noise 
 
@@ -375,5 +376,5 @@ is the same as
     def noise=(value)
         @noise = value
     end
-
+## attr_accessor
 attr_accessor :noise is the same as defining the attribute methods for reading and writing on the attribute noise
