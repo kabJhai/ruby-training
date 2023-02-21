@@ -329,3 +329,24 @@ For example
     cat =  Animal.new
     cat.set_noise("Meow!")
     puts cat.make_noise
+
+## Readers and Writers [ Setters and Getters ]
+
+In Ruby the setter and getter methods have the same name as the instance variable
+
+For example: To make a setter and getter methods for the instance variable noise we write the following code
+
+<code>
+
+    #The code below defines an animal class with an instant variable node and methods to access it
+    class Animal
+
+        def noise
+            @noise
+        end
+
+        def noise = (value)
+            @noise = value
+        end
+    end
+</code>
