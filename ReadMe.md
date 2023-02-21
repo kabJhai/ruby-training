@@ -266,3 +266,24 @@ We can use the defualt sort method to sort an array. We can also customize the s
 
     #This sorts it in descending order
     new_array = array.sort {|a, b| b <=> a}
+
+We can also sort arrays containing other objects other than numbers by customizing the sort method
+
+# Merge Method
+
+Merge is only used for Hashes
+If two hash tables contain the same key, the value of the second hash table will replace the value of the first
+We can customize the merge method and handle when a key conflict occurs and perform another operation.
+
+    h1 = {:a => 1, :b => 2, :c => 3}
+    h2 = {:a => 10, :b => 9, :d => 3}
+
+    #This merges h1 and h2. If key conflict occurs values of h2 will replace the value of h1.
+    h1.merge(h2)
+
+    #This merges h1 and h2. If key conflict occurs values the old value or the value on h1 will be used.
+    h1.merge(h2) {|key,old,new| old}
+
+    #We can also perform another operation every time a key conflict occurs
+    #The code below multiplies the old value with the new value and store it when a key conflict occurs
+    h1.merge(h2) {|key,old,new| old * new}
