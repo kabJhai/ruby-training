@@ -567,6 +567,8 @@ In Ruby you can handle an exception by using the `rescue` keyword.
         puts "ZeroDivisionError"
     rescue TypeError, ArgumentError
         puts "Your arguments are invalid"
+    rescue
+        puts "Unexpected exception"
     end
 
 
