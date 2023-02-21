@@ -301,3 +301,31 @@ Variables are defined differently depending on the scope
         <tr><td>Local Variable</td><td>variable</td><tr>
         <tr><td>Block Variable</td><td>variable</td><tr>
     </table>
+
+# Class
+
+Classes are defined by using the class keyword and follow the CamelCase naming convention
+
+    class MyClass
+
+    end
+
+For example
+
+    #The code below defines an animal class with an instant variable node and methods to access it
+    class Animal
+
+        def make_noise
+            @noise
+        end
+
+        def set_noise(value)
+            @noise = value
+        end
+    end
+
+    #In another file we can access the class instance and perform some operations
+
+    cat =  Animal.new
+    cat.set_noise("Meow!")
+    puts cat.make_noise
