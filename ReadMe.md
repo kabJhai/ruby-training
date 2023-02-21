@@ -238,7 +238,7 @@ For example:
     end
 
     puts "The maximum value is #{result}"
-    
+
 
     #The code below is used to sum the values of the array
 
@@ -247,3 +247,22 @@ For example:
     end
     puts "The sum is #{sum}"
 
+
+# Comparison operator
+
+The comparison operator is <strong> <=> </strong>
+
+The comparison operator returns:
+     -1 if the value on the left is less than the value on right
+     1 if the value on the right is greater than the value on the left
+     0 if the value on the right is equal to the value on the left
+
+We can use the defualt sort method to sort an array. We can also customize the sort method by using the comparison operator
+
+    array = [2,67,246,388,32,32,7,9,95,31,4,1]
+
+    #This sorts it in ascending order
+    new_array = array.sort {|a, b| a <=> b}
+
+    #This sorts it in descending order
+    new_array = array.sort {|a, b| b <=> a}
