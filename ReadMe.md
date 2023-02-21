@@ -572,3 +572,38 @@ In Ruby you can handle an exception by using the `rescue` keyword.
     end
 
 
+We can raise an exception in our code both the Defaults and Custom exceptions defined programmatically
+
+    We can do something like:
+
+        raise ZeroDivisionError
+
+        or 
+
+        raise "File name is invalid"
+
+    and handle it by using the `rescue` keyword
+
+To define a custom error we have to inherit from `StandardError` class and use `super` to pass the custom message. 
+
+    class ArrayEmptyError < StandardError
+        def initialize(array)
+            super("Empty array passed.")
+            puts "The length of array is #{array.length}"
+        end
+    end
+
+    class Students
+        def initialize
+            @students_list = []
+            if @students_list.length == 0
+                raise ArrayEmptyError.new(@students_list)
+            end
+        end
+    end
+
+    begin 
+        stud = Students.new
+    rescue => e
+        puts e.message
+    end
