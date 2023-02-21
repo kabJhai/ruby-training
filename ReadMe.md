@@ -344,7 +344,36 @@ For example: To make a setter and getter methods for the instance variable noise
             @noise
         end
 
-        def noise = (value)
+        def noise=(value)
             @noise = value
         end
     end
+
+    cat =  Animal.new
+    cat.noise = "Meow!"
+    puts cat.noise
+
+# Attribute Methods
+
+We can have attribute reader, writer and accessor methods
+We use attr_reader, attr_writer and attr_accessor to declare attribute methods
+
+    attr_reader :noise 
+
+is the same as
+
+    def noise
+        @noise
+    end
+
+
+
+    attr_writer :noise 
+
+is the same as
+
+    def noise=(value)
+        @noise = value
+    end
+
+attr_accessor :noise is the same as defining the attribute methods for reading and writing on the attribute noise
