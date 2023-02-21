@@ -552,3 +552,21 @@ We use the keyword `include` to include the behavior of a module inside our clas
 - include: is used to include modules into a class not file.
 
 
+# Exception Handling
+
+In Ruby you can handle an exception by using the `rescue` keyword.
+
+    def divide(x,y)
+        x / y
+    end
+    begin
+        divide(2,0)
+        divide(4,"2")
+        divide(1)
+    rescue ZeroDivisionError  
+        puts "ZeroDivisionError"
+    rescue TypeError, ArgumentError
+        puts "Your arguments are invalid"
+    end
+
+
