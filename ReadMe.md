@@ -378,3 +378,13 @@ is the same as
     end
 ## attr_accessor
 attr_accessor :noise is the same as defining the attribute methods for reading and writing on the attribute noise
+
+    def noise
+        @noise
+    end
+
+    def noise=(value)
+        @noise = value
+    end
+
+We can customize the reader and writer methods by defining it directly rather than using attributes
