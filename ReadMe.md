@@ -158,3 +158,12 @@ The same property as for loop in python
     for i in cars
         puts i.capitalize
     end
+
+# I/O
+
+## gets 
+    - Used for getting a value from user input
+## puts / print
+    - Both used for displaying a value on console
+    - Puts: adds a newline at the end automatically
+    - Print: prints the value as it is without newline
