@@ -498,3 +498,49 @@ To modify a method and call the method in the parent class or to just call the m
 
     doc = JuniorDoctor.new
     doc.perform_surgery
+
+
+# Modules
+
+## Namespaces
+
+Create namespaces to prevent conflict with Ruby classes or your classes that may have the same name
+
+To namespace a class add it inside a module
+
+    module AnimalModule
+        class  Animal
+            attr_accessor :noise
+            attr_accessor :color
+
+            def initialize(noise, color)
+                @noise = noise
+                @color = color
+            end
+        end
+    end
+
+## Mixins
+
+Mixins allow us to utilize a single set of behaviors from different classes
+We use the keyword `include` to include the behavior of a module inside our class
+
+    Class Inheritance is used to modify or extend a behavior or a another class while Mix-ins are used to utilize the behaviours defined already in a module.
+
+    In the following example student and teacher classes both contain the behaviours defined inside the InformationModule.
+
+    module InformationModule
+        attr_accessor :full_name, :address
+
+        def full_info
+            "#{full_name} - ${address}"
+        end
+    end
+
+    class Student
+        include InformationModule
+    end
+
+    class Teacher
+        include InformationModule
+    end
