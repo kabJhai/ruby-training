@@ -193,3 +193,30 @@ Useful for iterating over a range or an arrar and find a value that satisfies th
 
      #Check if none of the elements satisfy the condition
     array.all?{ |value| value % 2 == 0 }   
+
+
+# Maps
+
+Perform an operation on elements of an array and map it to an array
+
+    x = [*(1..10)]
+    y = x.map{ |value| value**2}
+
+    #or
+
+    y = x.map do |value|
+        value ** 2
+    end
+    #If you want to change the origional array
+
+    x.map!{ |value| value**2 }
+
+    #Square the even elements only
+
+    y = x.map do |value|
+        if value % 2 == 0
+            value**2
+        else
+            value
+        end
+    end
