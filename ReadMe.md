@@ -148,3 +148,16 @@ Does work given the initial and the final value
         puts "Do something #{value}"
     end
 `
+
+## For in
+
+The same property as for loop in python
+`
+
+cars = ['ford', 'bmw', 'toyota']
+
+for i in cars
+    puts i.capitalize
+end
+
+`
