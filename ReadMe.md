@@ -451,3 +451,50 @@ Class methods are defined by adding `self.` before the method name
     cat = Animal.create_cat
     puts cat.noise
     puts cat.color
+
+# Inheritance
+
+To inherit classes you need to use `<` in beween your class declaration and the parent class
+
+
+    class  Animal
+        attr_accessor :noise
+        attr_accessor :color
+
+        def initialize(noise, color)
+            @noise = noise
+            @color = color
+        end
+    end
+
+    class Cat < Animal
+        def initialize
+            @noise = "Meow"
+            @color = "Stripes"
+        end
+    end
+
+    cat = Cat.new
+    puts cat.noise
+    puts cat.color
+
+To modify a method and call the method in the parent class or to just call the method in the parent class we use `super` keyword.
+
+
+    class  Doctor
+        def perform_surgery
+            puts "Perform Surgery"
+        end
+    end
+
+    class JuniorDoctor < Doctor
+        def perform_surgery
+            puts "Ask support from the Senior Doctor"
+            puts "Pray a lot"
+            super
+            puts "Be relieved"
+        end
+    end
+
+    doc = JuniorDoctor.new
+    doc.perform_surgery
