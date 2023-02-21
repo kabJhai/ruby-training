@@ -45,6 +45,7 @@ We can use loops to handle cases iteratively
 Basic Loop statement
 
 `
+
     i = 10
     loop do
         break if i < 1
@@ -57,6 +58,7 @@ Basic Loop statement
 ## While Loop
 
 `
+
     i = 10
     while i >= 1
         puts "Count is #{i}"
@@ -71,6 +73,7 @@ Basic Loop statement
 Until loop iterates through a collection or a sequence of elements
 Does an operation until the condition is satisfied. In other words it works as while not or unless condition
 `
+
     values = [1,2,3]
     until values.empty?
         value = values.shift
